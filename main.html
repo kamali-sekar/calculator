@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🎓 Student Marks Calculator</h1>
+            <p>Enter student details to calculate Total, Average, Grade and Overall Statistics.</p>
+        </header>
+
+        <!-- Student Form -->
+        <div class="card">
+
+            <h2>Student Details</h2>
+
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" id="name" placeholder="Enter Student Name">
+            </div>
+
+            <div class="form-group">
+                <label>Tamil</label>
+                <input type="number" id="tamil" placeholder="Enter Tamil Marks">
+            </div>
+
+            <div class="form-group">
+                <label>English</label>
+                <input type="number" id="english" placeholder="Enter English Marks">
+            </div>
+
+            <div class="form-group">
+                <label>Mathematics</label>
+                <input type="number" id="maths" placeholder="Enter Maths Marks">
+            </div>
+
+            <div class="form-group">
+                <label>Science</label>
+                <input type="number" id="science" placeholder="Enter Science Marks">
+            </div>
+
+            <div class="form-group">
+                <label>Social</label>
+                <input type="number" id="social" placeholder="Enter Social Marks">
+            </div>
+
+            <div class="buttons">
+                <button class="add-btn" onclick="addStudent()">
+                    Add Student
+                </button>
+
+                <button class="clear-btn" onclick="clearForm()">
+                    Clear
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Student Table -->
+
+        <div class="table-card">
+
+            <h2>Student Results</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Tamil</th>
+                        <th>English</th>
+                        <th>Maths</th>
+                        <th>Science</th>
+                        <th>Social</th>
+                        <th>Total</th>
+                        <th>Average</th>
+                        <th>Grade</th>
+                        <th>Result</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Overall Summary -->
+
+        <div class="summary">
+
+            <div class="box">
+                <h3>Total Students</h3>
+                <p id="students">0</p>
+            </div>
+
+            <div class="box">
+                <h3>Grand Total</h3>
+                <p id="grandTotal">0</p>
+            </div>
+
+            <div class="box">
+                <h3>Overall Average</h3>
+                <p id="overallAverage">0</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="merge.js"></script>
+
+</body>
+</html>
